@@ -7,12 +7,14 @@ using Forza4.Engine;
 
 namespace Forza4.ViewModel
 {
-    public class Player
+    public class PlayerVM
     {
-
         public string Name { get; set; }
+
+        public PlayerType Type { get; set; }
 
         public Color Color { get; set; }
 
+        public bool CanChange { get; set; }
     }
 }

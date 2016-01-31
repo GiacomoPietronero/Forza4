@@ -15,24 +15,16 @@ namespace Forza4.Engine.Players
         int Move(CellStatus[,] status);
     }
 
-    public class RandomPlayer : IPlayer
+    public abstract class BasePlayer : IPlayer
     {
-        private Random _rand;
-        private Color _color;
-
-        public RandomPlayer(Color color)
+        public BasePlayer(string name, Color color)
         {
             _color = color;
-            _rand = new Random(666);
+            _name = name;
         }
 
-        public string Name
-        {
-            get
-            {
-                return "RandomPlayer";
-            }
-        }
+        private readonly Color _color;
+        private readonly string _name;
 
         public Color Color
         {
@@ -42,11 +34,17 @@ namespace Forza4.Engine.Players
             }
         }
 
-        public int Move(CellStatus[,] status)
+        public string Name
         {
-            return _rand.Next(0, 7);
+            get
+            {
+                return _name;
+            }
         }
+
+        public abstract int Move(CellStatus[,] status);
     }
+
 
     public class ConsolePlayer : IPlayer
     {

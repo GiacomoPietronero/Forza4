@@ -4,11 +4,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Forza4.UI"
+      xmlns:vm="clr-namespace:Forza4.ViewModel;assembly=Forza4.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Player">
-
+    <StackPanel Orientation="Vertical" Margin="4">
+        <!--<StackPanel.DataContext>
+        <vm:PlayerVM/>
+        </StackPanel.DataContext>-->
     <Grid>
-        
+        <ComboBox x:Name="PlayerType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" />
+
     </Grid>
+    </StackPanel>
 </Page>

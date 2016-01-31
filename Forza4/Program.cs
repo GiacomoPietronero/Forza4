@@ -12,15 +12,16 @@ namespace Forza4
         static void Main(string[] args)
         {
             Console.WriteLine("Game starts...");
+
+            //IPlayer p1 = new DefensiveAggressivePlayer("P1-D", Color.Red, Style.Defensive);
+            IPlayer p1 = new RandomPlayer("P1", Color.Red);
+
+            IPlayer p2 = new DefensiveAggressivePlayer("P2-A", Color.Blue, Style.Aggressive);
             
-            //Game game = new Game(new ConsolePlayer("Jack", Color.Red) , new ConsolePlayer("Fra", Color.Blue));
-
-            Game game = new Game(new RandomPlayer(Color.Red), new RandomPlayer(Color.Blue));
-
-
-            game.StartFromConsole();
-
-
+            
+            MultiGame multiGame = new MultiGame(p1, p2, 100000);
+            multiGame.PlayerAllGames();
+            
         }
 
     }

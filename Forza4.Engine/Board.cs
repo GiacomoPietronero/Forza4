@@ -149,7 +149,7 @@ namespace Forza4.Engine
             counter = 0;
             player = CellStatus.Empty;
 
-            for (int c = 3; c < ncols + 2; c++)
+            for (int c = -2; c < ncols - 3; c++)
             {
                 for (int r = 0; r < nrows; r++)
                 {

@@ -27,40 +27,50 @@ namespace Forza4.Engine
         }
 
 
-        public void StartFromConsole()
+        public void StartFromConsole(bool verbose = false)
         {
             int moveIndex = 0;
 
             while (!HasWinner && !board.BoardIsFull())
             {
-                Console.WriteLine(string.Format("Player {0} is next to play", nextToPlay));
-
-                Console.WriteLine("Insert column index");
-                
+                if (verbose)
+                {
+                    Console.WriteLine(string.Format("Player {0} is next to play", nextToPlay));
+                    Console.WriteLine("Insert column index");
+                }
                 int col = players[nextToPlay].Move(board.BoardStatus);
-                
+
                 bool isValidMove = Move(col);
 
                 if (!isValidMove)
                 {
-                    Console.WriteLine("Cannot play that!");
+                    if (verbose)
+                    {
+                        Console.WriteLine("Cannot play that!");
+                    }
                     continue;
                 }
 
                 moveIndex++;
-                Console.WriteLine(string.Format("Move number {0}", moveIndex));
+                if (verbose)
+                {
+                    Console.WriteLine(string.Format("Move number {0}", moveIndex));
+                }
             }
 
             if (HasWinner)
             {
-                Console.WriteLine(string.Format("Player {0} has won the game!", Winner));
+                if (verbose)
+                    Console.WriteLine(string.Format("Player {0} has won the game!", Winner));
             }
             else if (board.BoardIsFull())
             {
-                Console.WriteLine("No more moves available!");
+                if (verbose)
+                    Console.WriteLine("No more moves available!");
             }
-            Console.WriteLine("Press any key...");
-            Console.ReadLine();
+
+            //Console.WriteLine("Press any key...");
+            //Console.ReadLine();
         }
 
         public bool Move(int col)
