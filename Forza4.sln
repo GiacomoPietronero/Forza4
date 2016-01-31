@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forza4", "Forza4\Forza4.csproj", "{500AC00F-8295-4B77-82C7-8EB408818ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forza4.Engine", "Forza4.Engine\Forza4.Engine.csproj", "{BCDECB83-4B3F-4271-B17F-A50DA5BB27E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forza4.UI", "Forza4.UI\Forza4.UI.csproj", "{B11018A3-7553-464A-BE5F-145C56E31ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forza4.ViewModel", "Forza4.ViewModel\Forza4.ViewModel.csproj", "{A2709280-959D-4D5E-97D5-A01E503FF21D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{500AC00F-8295-4B77-82C7-8EB408818ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500AC00F-8295-4B77-82C7-8EB408818ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500AC00F-8295-4B77-82C7-8EB408818ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500AC00F-8295-4B77-82C7-8EB408818ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDECB83-4B3F-4271-B17F-A50DA5BB27E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDECB83-4B3F-4271-B17F-A50DA5BB27E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDECB83-4B3F-4271-B17F-A50DA5BB27E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDECB83-4B3F-4271-B17F-A50DA5BB27E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11018A3-7553-464A-BE5F-145C56E31ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11018A3-7553-464A-BE5F-145C56E31ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11018A3-7553-464A-BE5F-145C56E31ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11018A3-7553-464A-BE5F-145C56E31ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2709280-959D-4D5E-97D5-A01E503FF21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2709280-959D-4D5E-97D5-A01E503FF21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2709280-959D-4D5E-97D5-A01E503FF21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2709280-959D-4D5E-97D5-A01E503FF21D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
